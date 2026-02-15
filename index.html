@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Your Name — Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/261070726?s=400&u=5347e6320d8fe9006547c288d7b69028c19df2ac&v=4" alt="Sakanai avatar">
+        <h1 class="site-title">Sakanai</h1>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-inner">
+          <div class="hero-text">
+            <h2>Hi — I'm Sakanai</h2>
+            <p class="lead">Learning C++ • I love games, cats, and collecting games on Steam.</p>
+            <p class="cta-row">
+              <a class="btn" href="#projects">See projects</a>
+              <a class="btn ghost" href="https://sakanai.space/">My site</a>
+            </p>
+          </div>
+          <div class="hero-art">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="g" x1="0" x2="1">
+                  <stop stop-color="#6EE7B7" offset="0"/>
+                  <stop stop-color="#3B82F6" offset="1"/>
+                </linearGradient>
+              </defs>
+              <rect width="200" height="200" rx="20" fill="url(#g)" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="container section about">
+        <h3>About</h3>
+        <p>I’m learning C++ and exploring game development. I enjoy games, cats, and collecting games on Steam.</p>
+      </section>
+
+      <section id="projects" class="container section projects">
+        <h3>Projects</h3>
+        <ul class="project-list">
+          <li class="project-item">
+            <h4>Project One</h4>
+            <p>Short description and a link to the project or repo.</p>
+            <p><a href="#">View</a> • <a href="#">Source</a></p>
+          </li>
+          <li class="project-item">
+            <h4>Project Two</h4>
+            <p>Short description and technologies used.</p>
+            <p><a href="#">View</a> • <a href="#">Source</a></p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="container section contact">
+        <h3>Contact</h3>
+        <p>You can reach me via:</p>
+        <ul class="links">
+          <li><a href="https://github.com/santakameow/" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://steamcommunity.com/id/santakanai/" target="_blank" rel="noopener">Steam</a></li>
+          <li><a href="https://sakanai.space/" target="_blank" rel="noopener">Personal site</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Sakanai — <a href="https://sakanai.space/">sakanai.space</a></p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
